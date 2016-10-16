@@ -77,7 +77,7 @@ Hours and Minutes in UTC (Universal Time Coordinate)
 
 **Location**<br>
 **_39.4 N_** – *Latitude and Hemisphere (N or S)*<br>
-**_74.4 W _** – *Longitude and Hemisphere (W or E)*
+**_74.4 W_** – *Longitude and Hemisphere (W or E)*
 
 **Max. Wind Speed and Pressure**<br>
 **_60_** – *Maximum sustained wind* (in _knots_)<br>
@@ -85,19 +85,19 @@ Hours and Minutes in UTC (Universal Time Coordinate)
 
 The cyclone system is described in wind speed zones:
 
-**34 kt (knot) wind radii maximum extents** (in _nautical miles_)<br>
+*34 kt (knot) wind radii maximum extents* (in _nautical miles_)<br>
 **_230_** – northeastern quadrant<br>
 **_280_** – southeastern quadrant<br>
 **_160_** – southwestern quadrant<br>
 **_110_** – northwestern quadrant
 
-**50 kt (knot) wind radii maximum extents** (in _nautical miles_)<br>
+*50 kt (knot) wind radii maximum extents* (in _nautical miles_)<br>
 **_150_** – northeastern quadrant<br>
 **_150_** – southeastern quadrant<br>
 **_80_**  – southwestern quadrant<br>
 **_30_** – northwestern quadrant
 
-**64 kt (knot) wind radii maximum extents** (in _nautical miles_)<br>
+*64 kt (knot) wind radii maximum extents* (in _nautical miles_)<br>
 **_0_** – northeastern quadrant<br>
 **_0_** – southeastern quadrant<br>
 **_0_** – southwestern quadrant<br>
