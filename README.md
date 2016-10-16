@@ -76,8 +76,8 @@ Hours and Minutes in UTC (Universal Time Coordinate)
 </ul>
 
 **Location**<br>
-**_39.4 N_ – *Latitude and Hemisphere (N or S)*<br>
-_74.4 W _ – *Longitude and Hemisphere (W or E)*
+**_39.4 N_** – *Latitude and Hemisphere (N or S)*<br>
+**_74.4 W _** – *Longitude and Hemisphere (W or E)*
 
 **Max. Wind Speed and Pressure**<br>
 **_60_** – *Maximum sustained wind* (in _knots_)<br>
@@ -86,22 +86,22 @@ _74.4 W _ – *Longitude and Hemisphere (W or E)*
 The cyclone system is described in wind speed zones:
 
 **34 kt (knot) wind radii maximum extents** (in _nautical miles_)<br>
-_230_ – northeastern quadrant<br>
-_280_ – southeastern quadrant<br>
-_160_ – southwestern quadrant<br>
-_110_ – northwestern quadrant
+**_230_** – northeastern quadrant<br>
+**_280_** – southeastern quadrant<br>
+**_160_** – southwestern quadrant<br>
+**_110_** – northwestern quadrant
 
 **50 kt (knot) wind radii maximum extents** (in _nautical miles_)<br>
-_150_ – northeastern quadrant<br>
-_150_ – southeastern quadrant<br>
-_80_  – southwestern quadrant<br>
-_30_ – northwestern quadrant
+**_150_** – northeastern quadrant<br>
+**_150_** – southeastern quadrant<br>
+**_80_**  – southwestern quadrant<br>
+**_30_** – northwestern quadrant
 
 **64 kt (knot) wind radii maximum extents** (in _nautical miles_)<br>
-_0_ – northeastern quadrant<br>
-_0_ – southeastern quadrant<br>
-_0_ – southwestern quadrant<br>
-_0_ – northwestern quadrant
+**_0_** – northeastern quadrant<br>
+**_0_** – southeastern quadrant<br>
+**_0_** – southwestern quadrant<br>
+**_0_** – northwestern quadrant
 
 ## Acknowledgements
 
@@ -124,9 +124,9 @@ regarding appropriate use.
 
 Analysis and Visualizations that have used the Hurdat data:
 <ol>
-<li>[Interactive Visualization and Analysis of Hurricane Data](https://www.computer.org/csdl/proceedings/itng/2011/4367/00/4367a072-abs.html)</li>
-<li>[Scientific Visualization Studio](https://svs.gsfc.nasa.gov/cgi-bin/search.cgi?dataset=281)</li>
-<li>[Generating Hurricanes with a Markov Spatial Process](https://www.r-bloggers.com/generating-hurricanes-with-a-markov-spatial-process/)</li>
+<li><a href="https://www.computer.org/csdl/proceedings/itng/2011/4367/00/4367a072-abs.html">Interactive Visualization and Analysis of Hurricane Data</a></li>
+<li><a href="https://svs.gsfc.nasa.gov/cgi-bin/search.cgi?dataset=281">Scientific Visualization Studio</a></li>
+<li><a href="https://www.r-bloggers.com/generating-hurricanes-with-a-markov-spatial-process/">Generating Hurricanes with a Markov Spatial Process</a></li>
 </ol>
 
 ## Inspiration
