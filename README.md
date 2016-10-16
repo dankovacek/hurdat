@@ -1,7 +1,7 @@
 
-# Atlantic hurricane database (HURDAT2) 1851-2015
+# National Hurricane Center - Atlantic hurricane database (HURDAT2)
 
-### Tropical and Subtropical Cyclone Database Summary
+### Tropical and Subtropical Cyclone Database Summary - 1851-2015
 
 ## Context
 This dataset (known as Atlantic HURDAT2) contains historical records
