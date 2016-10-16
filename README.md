@@ -26,13 +26,14 @@ Example:
 AL092011, IRENE, 39,
 1234567890123456789012345768901234567
 ```
-**_AL_** – *Basin*
+**_AL_** – *Basin*<br>
 Atlantic Basin
 
 **_09_** – *ATCF cyclone number for that year*
-**_2011_** – *Year*
-**_IRENE_** – *Name* - (if available, or else “UNNAMED”)
-**_39_** – *Number of best track entries – rows – to follow*
+
+**_2011_** – *Year*<br>
+**_IRENE_** – *Name* - (if available, or else “UNNAMED”)<br>
+**_39_** – *Number of best track entries – rows – to follow*<br>
 
 ### Data Field
 
@@ -42,10 +43,10 @@ Example:
 123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
 ```
 
-**_20110828_** – *Date*
+**_20110828_** – *Date*<br>
 Year, Month, Day as (YYYYMMDD)
 
-**_0935_** – *Time*
+**_0935_** – *Time*<br>
 Hours and Minutes in UTC (Universal Time Coordinate)
 
 **_L_** – *Record Identifier*
@@ -74,45 +75,43 @@ Hours and Minutes in UTC (Universal Time Coordinate)
 <li>DB – Disturbance (of any intensity)</li>
 </ul>
 
-**Location**
-**_39.4 N_ – *Latitude and Hemisphere (N or S)*
+**Location**<br>
+**_39.4 N_ – *Latitude and Hemisphere (N or S)*<br>
 _74.4 W _ – *Longitude and Hemisphere (W or E)*
 
-**Max. Wind Speed and Pressure**
-**_60_** – *Maximum sustained wind* (in _knots_)
+**Max. Wind Speed and Pressure**<br>
+**_60_** – *Maximum sustained wind* (in _knots_)<br>
 **_959_** – *Minimum Pressure* (in _millibars_)
 
 The cyclone system is described in wind speed zones:
 
-**34 kt (knot) wind radii maximum extents** (in _nautical miles_)
-_230_ – northeastern quadrant
-_280_ – southeastern quadrant
-_160_ – southwestern quadrant
+**34 kt (knot) wind radii maximum extents** (in _nautical miles_)<br>
+_230_ – northeastern quadrant<br>
+_280_ – southeastern quadrant<br>
+_160_ – southwestern quadrant<br>
 _110_ – northwestern quadrant
 
-**50 kt (knot) wind radii maximum extents** (in _nautical miles_)
-_150_ – northeastern quadrant
-_150_ – southeastern quadrant
-_80_  – southwestern quadrant
+**50 kt (knot) wind radii maximum extents** (in _nautical miles_)<br>
+_150_ – northeastern quadrant<br>
+_150_ – southeastern quadrant<br>
+_80_  – southwestern quadrant<br>
 _30_ – northwestern quadrant
 
-**64 kt (knot) wind radii maximum extents** (in _nautical miles_)
-_0_ – northeastern quadrant
-_0_ – southeastern quadrant
-_0_ – southwestern quadrant
+**64 kt (knot) wind radii maximum extents** (in _nautical miles_)<br>
+_0_ – northeastern quadrant<br>
+_0_ – southeastern quadrant<br>
+_0_ – southwestern quadrant<br>
 _0_ – northwestern quadrant
 
 ## Acknowledgements
 
-[The data](http://www.nhc.noaa.gov/data/#hurdat), and the description above were derived from the [National Hurricane
-Center Data Archive](http://www.nhc.noaa.gov/data/), and the Center has also provided [more detailed written documentation.](http://www.nhc.noaa.gov/data/hurdat/hurdat2-format-atlantic.pdf)
+[The data](http://www.nhc.noaa.gov/data/#hurdat), and the description above were derived from the [National Hurricane Center Data Archive](http://www.nhc.noaa.gov/data/), and the Center has also provided [more detailed written documentation.](http://www.nhc.noaa.gov/data/hurdat/hurdat2-format-atlantic.pdf)
 
 From the Documentation:
-```
-"The National Hurricane Center (NHC) conducts a post-storm analysis of each tropical cyclone in its area of responsibility to determine the official assessment of the cyclone's history. This analysis makes use of all available observations, including those that may not have been available in real time. In addition, NHC conducts ongoing reviews of any retrospective tropical cyclone analyses brought to its attention, and on a regular basis updates the historical record to reflect changes introduced via the Best Track Change Committee (Landsea et al. 2004a, 2004b, 2008, 2012, Hagen et al. 2012,)"
+> "The National Hurricane Center (NHC) conducts a post-storm analysis of each tropical cyclone in its area of responsibility to determine the official assessment of the cyclone's history. This analysis makes use of all available observations, including those that may not have been available in real time. In addition, NHC conducts ongoing reviews of any retrospective tropical cyclone analyses brought to its attention, and on a regular basis updates the historical record to reflect changes introduced via the Best Track Change Committee (Landsea et al. 2004a, 2004b, 2008, 2012, Hagen et al. 2012,)"
 
 -Chris Landsea, James Franklin, and Jack Beven – May 2015
-```
+
 
 ## License
 
