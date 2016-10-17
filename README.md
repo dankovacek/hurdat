@@ -14,12 +14,19 @@ on tropical and subtropical cyclones from 1851 to 2015.
 The dataset has a comma-delimited format, featuring location, maximum wind,
 central pressure, and size of known tropical and subtropical cyclones.
 ("Size of cyclone" data is available from 2004 to 2015 only).  The cyclone
-data are provided on a 6-hour interval.  The data is formatted into two types
-of lines (or fields): header and data.
+data are provided on a 6-hour interval.  The csv data is formatted into two types
+of lines (or fields): header and data.  The header rows contain 4 fields,
+while the data rows corresponding to the header row follow the header row
+and the integer at index 3 location of the header row indicates how many data
+rows correspond to the header row.
+
+For ease of implementation with javascript libraries or other web-based applications,
+the data have been formatted into a json object.  Details about the json object
+structure follow the description of the csv file format.
 
 From the [NHC documentation](http://www.nhc.noaa.gov/data/hurdat/hurdat2-format-atlantic.pdf):
 
-### Header Field
+### CSV - Header Row
 
 Example:
 ```
@@ -34,7 +41,7 @@ Atlantic Basin
 **_IRENE_** – *Name* - (if available, or else “UNNAMED”)<br>
 **_39_** – *Number of best track entries – rows – to follow*<br>
 
-### Data Field
+### CSV - Data Field
 
 Example:
 ```
@@ -101,7 +108,26 @@ The cyclone system is described in wind speed zones:
 **_0_** – southwestern quadrant<br>
 **_0_** – northwestern quadrant
 
+### JSON Format
 
+The hurricane database has been converted into a json object ('result.json').
+The object keys correspond to the unique cyclone identifier(ID), while each ID's
+corresponding value is itself an object containing the following fields:
+<ul>
+    <li>
+        <span>**key**</span>
+        <span>**value**</span>
+    </li>
+    <li>
+        <span>header</span>
+        <span>object: 'name' = hurricane name (if named), 'track entries' = number of measurement tracks</span>
+    </li>
+    <li>
+        <span></span>
+    </li>
+    <li></li>
+    <li></li>
+</ul>
 
 ## Acknowledgements
 
