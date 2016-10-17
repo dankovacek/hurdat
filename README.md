@@ -24,7 +24,6 @@ From the [NHC documentation](http://www.nhc.noaa.gov/data/hurdat/hurdat2-format-
 Example:
 ```
 AL092011, IRENE, 39,
-1234567890123456789012345768901234567
 ```
 **_AL_** – *Basin*<br>
 Atlantic Basin
@@ -40,7 +39,6 @@ Atlantic Basin
 Example:
 ```
 20110828, 0935, L, TS, 39.4N, 74.4W, 60, 959, 230, 280, 160, 110, 150, 150, 80, 30, 0, 0, 0, 0,
-123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
 ```
 
 **_20110828_** – *Date*<br>
@@ -102,6 +100,8 @@ The cyclone system is described in wind speed zones:
 **_0_** – southeastern quadrant<br>
 **_0_** – southwestern quadrant<br>
 **_0_** – northwestern quadrant
+
+
 
 ## Acknowledgements
 
