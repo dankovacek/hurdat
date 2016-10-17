@@ -115,62 +115,66 @@ The object keys correspond to the unique cyclone identifier(ID), while each ID's
 corresponding value is itself an object containing the following keys:
 <ul>
     <li>
-        <h3>'header'</h3>
+        <h4>'name'</h4>
     </li>
     <li>
-        <h3>'Coordinates'</h3>
+        <h4>'track_entries'</h4>
     </li>
     <li>
-        <h3>'Date'</h3>
+        <h4>'Coordinates'</h4>
     </li>
     <li>
-        <h3>'Max. Wind Speed'</h3>
+        <h4>'Date'</h4>
     </li>
     <li>
-        <h3>'Min Pressure'</h3>
+        <h4>'Max. Wind Speed'</h4>
     </li>
     <li>
-        <h3>'Record Identifier'</h3>
+        <h4>'Min Pressure'</h4>
     </li>
     <li>
-        <h3>'Status of System'</h3>
+        <h4>'Record Identifier'</h4>
     </li>
     <li>
-        <h3>'Time'</h3>
+        <h4>'Status of System'</h4>
     </li>
     <li>
-        <h3>'Wind Radii Extents'</h3>
+        <h4>'Time'</h4>
+    </li>
+    <li>
+        <h4>'Wind Radii Extents'</h4>
     </li>
 </ul>
 
-#### Header
-An object with keys 'name', and 'track_entries' and values:
-'name' = hurricane name (if named),
-'track entries' = number of measurement tracks
+#### 'name'
+Value is the cyclone's 'common' name, if one was given.
 
-#### Record Identifier
+#### 'track_entries'
+'track entries' = number of measurement tracks for the cyclone.
+
+#### 'Record Identifier'
 As above with CSV.  May be blank.
 
-#### Coordinates
+#### 'Coordinates'
 An object with keys 'lat', and 'lon' for geographic coordinates of the datum.
 
-#### Max. Wind Speed
+#### 'Max. Wind Speed'
 Value is maximum speed.  As above with CSV format.
 
-#### Min. Pressure
+#### 'Min. Pressure'
 Value is minimum pressure. As above with CSV format.
 
-#### Status of System
+#### 'Status of System'
 As above with CSV format.
 
-#### Date
+#### 'Date'
 A date object with keys 'year', 'month', 'day' corresponding to the date
 of the corresponding record.
 
-#### Time
+#### 'Time'
 Value is a 4-digit string representing measurement time, in HHMM format.
 
-#### Wind Radii Extents
+#### 'Wind Radii Extents'
 An object with keys '30kt', '50kt', '64kt' for wind speeds, each of which
 is itself a key with values 'SW', 'NE', 'SE', 'NW' describing the extents of the
 wind at the corresponding speed.
