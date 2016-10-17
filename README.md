@@ -112,22 +112,70 @@ The cyclone system is described in wind speed zones:
 
 The hurricane database has been converted into a json object ('result.json').
 The object keys correspond to the unique cyclone identifier(ID), while each ID's
-corresponding value is itself an object containing the following fields:
+corresponding value is itself an object containing the following keys:
 <ul>
     <li>
-        <span>**key**</span>
-        <span>**value**</span>
+        <h3>'header'</h3>
     </li>
     <li>
-        <span>header</span>
-        <span>object: 'name' = hurricane name (if named), 'track entries' = number of measurement tracks</span>
+        <h3>'Coordinates'</h3>
     </li>
     <li>
-        <span></span>
+        <h3>'Date'</h3>
     </li>
-    <li></li>
-    <li></li>
+    <li>
+        <h3>'Max. Wind Speed'</h3>
+    </li>
+    <li>
+        <h3>'Min Pressure'</h3>
+    </li>
+    <li>
+        <h3>'Record Identifier'</h3>
+    </li>
+    <li>
+        <h3>'Status of System'</h3>
+    </li>
+    <li>
+        <h3>'Time'</h3>
+    </li>
+    <li>
+        <h3>'Wind Radii Extents'</h3>
+    </li>
 </ul>
+
+#### Header
+An object with keys 'name', and 'track_entries' and values:
+'name' = hurricane name (if named),
+'track entries' = number of measurement tracks
+
+#### Record Identifier
+As above with CSV.  May be blank.
+
+#### Coordinates
+An object with keys 'lat', and 'lon' for geographic coordinates of the datum.
+
+#### Max. Wind Speed
+Value is maximum speed.  As above with CSV format.
+
+#### Min. Pressure
+Value is minimum pressure. As above with CSV format.
+
+#### Status of System
+As above with CSV format.
+
+#### Date
+A date object with keys 'year', 'month', 'day' corresponding to the date
+of the corresponding record.
+
+#### Time
+Value is a 4-digit string representing measurement time, in HHMM format.
+
+#### Wind Radii Extents
+An object with keys '30kt', '50kt', '64kt' for wind speeds, each of which
+is itself a key with values 'SW', 'NE', 'SE', 'NW' describing the extents of the
+wind at the corresponding speed.
+
+Values are nautical miles or empty string if no data exists.
 
 ## Acknowledgements
 
