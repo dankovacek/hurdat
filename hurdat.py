@@ -23,12 +23,13 @@ import string
 def array_scrub(array):
     scrubbed_array = []
     for e in array:
-        if e.strip() == '-999':
-            scrubbed_array += " "
-        elif e.strip() == 'NaN':
-            scrubbed_array += " "
+        value = e.strip()
+        if value == '-999':
+            scrubbed_array += [""]
+        elif value == 'NaN':
+            scrubbed_array += [""]
         else:
-            scrubbed_array += e.strip()
+            scrubbed_array += [value]
     return scrubbed_array
 
 def make_wind_radii_obj(input_array):
@@ -81,8 +82,13 @@ hurricane = {'header': 'default_header', 'data': 'default_name'}
 with open('hurdat.csv', 'rb') as csvfile:
     hurdat = csv.reader(csvfile, delimiter=",")
     for row in hurdat:
-        H_LIST += [row]
+        clean_row = array_scrub(row)
+        H_LIST += [clean_row]
 
+    with open('hurdat_cleaned.csv', 'wb') as f:
+        writer = csv.writer(f)
+        writer.writerows(H_LIST)
+        
 n = 0
 
 # assemble a dictionary for all historical cyclone events
@@ -111,21 +117,22 @@ for i in range(len(H_LIST)):
             max_wind_speed, min_pressure = row[6].strip(), row[7].strip()
 
             if max_wind_speed == '-999':
-                HC_DICT[h_id]['Max. Wind Speed'] = " "
+                HC_DICT[h_id]['Max. Wind Speed'] = ""
             else:
-                HC_DICT[h_id]['Max. Wind Speed'] = int(max_wind_speed)
+                HC_DICT[h_id]['Max. Wind Speed'] = max_wind_speed
 
             if min_pressure == '-999':
-                HC_DICT[h_id]['Min. Pressure'] = " "
+                HC_DICT[h_id]['Min. Pressure'] = ""
             else:
-                HC_DICT[h_id]['Min. Pressure']= int(min_pressure)
+                HC_DICT[h_id]['Min. Pressure']= min_pressure
                 
             HC_DICT[h_id]['Wind Radii Extents'] = make_wind_radii_obj(row[8:])
             
         # increase the index to jump to the next header row
         i += num_entries
 
-# output and save .json file
+#output and save .json file
+
 with open('result.json', 'w') as fp:
     json.dump(HC_DICT, fp)
      
