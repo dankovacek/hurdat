@@ -222,7 +222,10 @@ Are there any discernible trends in cyclone intensity, frequency, duration,
 size, or path over time?  How about for specific locations with the
 highest landfall frequency?
 
-### A basic visualization of hurricane track termination points scaled by maximum
-sustained velocity to qualitatively illustrate relative difference.  Based on [DataMaps](https://github.com/markmarkoh/datamaps)
+### Example:
+A basic visualization of hurricane track termination points scaled by maximum
+sustained velocity to qualitatively illustrate relative difference.
+Based on [DataMaps](https://github.com/markmarkoh/datamaps)
+
 ![Basic Visualization of Atlantic Hurricanes](/images/hurricanes_viz.jpg)
 
