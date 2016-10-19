@@ -157,6 +157,9 @@ As above with CSV.  May be blank.
 
 #### 'Coordinates'
 An object with keys 'lat', and 'lon' for geographic coordinates of the datum.
+Latitude and Longitude have been converted from hemispherical (having directional
+designations N, W, etc.) to decimal notation (where positive values indicate
+northern and western hemispheres, negative values indicate southern and eastern.)
 
 #### 'Max. Wind Speed'
 Value is maximum speed.  As above with CSV format.
@@ -218,3 +221,8 @@ could illustrate the most common landfall locations?
 Are there any discernible trends in cyclone intensity, frequency, duration,
 size, or path over time?  How about for specific locations with the
 highest landfall frequency?
+
+### A basic visualization of hurricane track termination points scaled by maximum
+sustained velocity to qualitatively illustrate relative difference.  Based on [DataMaps](https://github.com/markmarkoh/datamaps)
+![Basic Visualization of Atlantic Hurricanes](/images/hurricanes_viz.jpg)
+
