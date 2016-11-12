@@ -10,6 +10,19 @@
 This dataset (known as Atlantic HURDAT2) contains historical records
 on tropical and subtropical cyclones from 1851 to 2015.
 
+## Instructions To Run the Data Visualization in a Browser
+Python 2.7 virtual server is used to run the visualization.  You must have Python 2.7
+installed on your machine.
+
+Clone the repository:
+`>>git clone https://github.com/dankovacek/hurdat`
+
+Navigate to the project directory and run:
+`python -m SimpleHTTPServer`
+
+Open your browser and navigate to
+`localhost:8000`
+
 ## Content
 The dataset has a comma-delimited format, featuring location, maximum wind,
 central pressure, and size of known tropical and subtropical cyclones.
@@ -226,6 +239,7 @@ highest landfall frequency?
 A basic visualization of hurricane track termination points scaled by maximum
 sustained velocity to qualitatively illustrate relative difference.
 Based on [DataMaps](https://github.com/markmarkoh/datamaps)
+
 
 ![Basic Visualization of Atlantic Hurricanes](/images/hurricanes_viz.jpg)
 
