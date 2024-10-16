@@ -97,7 +97,7 @@ data_row_titles = ['Date', 'Time', 'Record Identifier', 'Status of System',
                    '64kt extent NE', '64kt extent SE', '64kt extent SW',
                    '64kt extent NW']
 
-with open('hurdat.csv', 'rb') as csvfile:
+with open('hurdat.csv', 'r') as csvfile:
     hurdat = csv.reader(csvfile, delimiter=",")
     for row in hurdat:
         clean_row = array_scrub(row)
@@ -114,7 +114,7 @@ with open('hurdat.csv', 'rb') as csvfile:
             H_LIST_JSON += [clean_row]
             H_LIST += [data_row_titles]
 
-    with open('hurdat_cleaned.csv', 'wb') as f:
+    with open('hurdat_cleaned.csv', 'w') as f:
         writer = csv.writer(f)
         writer.writerows(H_LIST)
 
@@ -126,7 +126,18 @@ for i in range(len(H_LIST_JSON)):
         h_id = H_LIST_JSON[i][0]
 
         # initialize entry header as empty dict object
-        HC_DICT[h_id] = {}
+        HC_DICT[h_id] = {
+			'track_entries': 0,
+			'name': '',
+			'Date': [],
+			'Time': [],
+			'Record Identifier': [],
+			'Status of System': [],
+			'Coordinates': [],
+			'Max. Wind Speed': [],
+			'Min. Pressure': [],
+			'Wind Radii Extents': []
+		}
         HC_DICT[h_id]['name'] = H_LIST_JSON[i][1].strip()
 
         # number of rows of data for the current cyclone record
@@ -165,5 +176,3 @@ for i in range(len(H_LIST_JSON)):
 
 with open('result.json', 'w') as fp:
     json.dump(HC_DICT, fp)
-
-
